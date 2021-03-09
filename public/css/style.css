@@ -36,6 +36,12 @@ body .btn-primary {
 body .btn-primary:hover {
   background-color: #243b3e;
 }
+body .btn-primary:focus {
+  background-color: #243b3e;
+}
+body .btn-primary:active {
+  margin: 0px;
+}
 body .btn-secondary {
   background-color: #e9ecef;
   border: #e9ecef;
