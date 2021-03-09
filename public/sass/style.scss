@@ -1,13 +1,17 @@
 $primary: #335358;
 $secondary: #e9ecef;
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
 main {
   min-height: calc(100vh - 40rem);
 }
 body {
- h1{
-     color: $secondary;
- }
+  h1 {
+    color: $secondary;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+  }
   h2,
   h3,
   h4,
@@ -16,6 +20,8 @@ body {
   p,
   a {
     color: $primary;
+    font-family: 'Montserrat', sans-serif !important;
+    
   }
   .container {
     margin-top: 2rem;
@@ -30,25 +36,45 @@ body {
       color: $primary;
     }
   }
+  .btn {
+    &-primary {
+      background-color: $primary;
+      border: $primary;
+      &:hover {
+        background-color: darken($color: $primary, $amount: 8);
+      }
+    }
+    &-secondary {
+      background-color: $secondary;
+      border: $secondary;
+      color: $primary !important;
+      &:hover {
+        background-color: darken($color: $secondary, $amount: 8);
+      }
+    }
+  }
 }
 
-.btn {
-  &-primary {
-    background-color: $primary;
-    border: $primary;
-    &:hover {
-      background-color: darken($color: $primary, $amount: 8);
+.navbar-brand{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    span{
+        color: $primary;
+        background-color: $secondary;
+        padding: 20px;
     }
-  }
-  &-secondary {
-    background-color: $secondary;
-    border: $secondary;
-    color: $primary !important;
-    &:hover {
-      background-color: darken($color: $secondary, $amount: 8);
-    }
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  min-height: 55px;
+  a {
+    color: $secondary;
   }
 }
+
 .carousel {
   &-item {
     height: 32rem;
@@ -61,13 +87,15 @@ body {
       height: 32rem;
     }
   }
+  p{
+      color: $secondary;
+  }
 }
-
 .flip-card {
   background-color: transparent;
   width: 400px;
   height: 400px;
-  perspective: 1000px; /*DELETE*/
+  perspective: 1000px;
   margin-top: 3rem;
   h3,
   p {
@@ -76,7 +104,8 @@ body {
     color: $secondary;
   }
   h3 {
-    padding-top: 33%;
+    padding-top: 25%;
+    font-size: 2rem;
   }
   &-inner {
     position: relative;
@@ -90,6 +119,8 @@ body {
     background-attachment: cover;
   }
 }
+
+/*True from tablets  --> */
 
 @media (min-width: 768px) {
   .carousel-caption p {
@@ -111,7 +142,6 @@ body {
 
   .flip-card-back {
     background-color: $secondary;
-
     transform: rotateY(180deg);
     z-index: 1;
   }
@@ -120,14 +150,4 @@ body {
     top: 33%;
     color: $primary;
   }
-}
-
-footer {
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  min-height: 55px; 
-  a{
-  color: $secondary;
-}
 }

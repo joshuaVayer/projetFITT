@@ -1,9 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
 main {
   min-height: calc(100vh - 40rem);
 }
 
 body h1 {
   color: #e9ecef;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
 }
 body h2,
 body h3,
@@ -13,6 +16,7 @@ body h6,
 body p,
 body a {
   color: #335358;
+  font-family: "Montserrat", sans-serif !important;
 }
 body .container {
   margin-top: 2rem;
@@ -25,21 +29,40 @@ body .bg-secondary {
   background-color: #e9ecef !important;
   color: #335358;
 }
-
-.btn-primary {
+body .btn-primary {
   background-color: #335358;
   border: #335358;
 }
-.btn-primary:hover {
+body .btn-primary:hover {
   background-color: #243b3e;
 }
-.btn-secondary {
+body .btn-secondary {
   background-color: #e9ecef;
   border: #e9ecef;
   color: #335358 !important;
 }
-.btn-secondary:hover {
+body .btn-secondary:hover {
   background-color: #d1d8de;
+}
+
+.navbar-brand {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+.navbar-brand span {
+  color: #335358;
+  background-color: #e9ecef;
+  padding: 20px;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  min-height: 55px;
+}
+footer a {
+  color: #e9ecef;
 }
 
 .carousel-item {
@@ -53,13 +76,15 @@ body .bg-secondary {
   min-width: 100%;
   height: 32rem;
 }
+.carousel p {
+  color: #e9ecef;
+}
 
 .flip-card {
   background-color: transparent;
   width: 400px;
   height: 400px;
   perspective: 1000px;
-  /*DELETE*/
   margin-top: 3rem;
 }
 .flip-card h3,
@@ -69,7 +94,8 @@ body .bg-secondary {
   color: #e9ecef;
 }
 .flip-card h3 {
-  padding-top: 33%;
+  padding-top: 25%;
+  font-size: 2rem;
 }
 .flip-card-inner {
   position: relative;
@@ -83,6 +109,7 @@ body .bg-secondary {
   background-attachment: cover;
 }
 
+/*True from tablets  --> */
 @media (min-width: 768px) {
   .carousel-caption p {
     margin-bottom: 1.25rem;
@@ -113,15 +140,6 @@ body .bg-secondary {
     top: 33%;
     color: #335358;
   }
-}
-footer {
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  min-height: 55px;
-}
-footer a {
-  color: #e9ecef;
 }
 
 /*# sourceMappingURL=style.css.map */
