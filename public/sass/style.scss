@@ -1,15 +1,15 @@
 $primary: #335358;
 $secondary: #e9ecef;
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
 
 main {
-  min-height: calc(100vh - 40rem);
+  min-height: calc(100vh - 27rem);
 }
 body {
   h1 {
     color: $secondary;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
   }
   h2,
@@ -20,8 +20,7 @@ body {
   p,
   a {
     color: $primary;
-    font-family: 'Montserrat', sans-serif !important;
-    
+    font-family: "Montserrat", sans-serif !important;
   }
   .container {
     margin-top: 2rem;
@@ -55,14 +54,16 @@ body {
   }
 }
 
-.navbar-brand{
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    span{
-        color: $primary;
-        background-color: $secondary;
-        padding: 20px;
-    }
+.navbar-brand {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  span {
+    color: $primary;
+    background-color: $secondary;
+    padding: 17px;
+    font-weight: 800;
+  }
 }
 
 footer {
@@ -87,10 +88,11 @@ footer {
       height: 32rem;
     }
   }
-  p{
-      color: $secondary;
+  p {
+    color: $secondary;
   }
 }
+
 .flip-card {
   background-color: transparent;
   width: 400px;
@@ -120,7 +122,51 @@ footer {
   }
 }
 
-/*True from tablets  --> */
+/*Events page*/
+
+.hero__self .carousel {
+  &-item {
+    height: 20rem;
+    background-position: center center;
+    > img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 20rem;
+    }
+  }
+}
+
+.events {
+  &-filter{
+    width: 60%;
+  }
+  .card {
+    width: 70%;
+    margin: auto;
+    &-title {
+      font-weight: 400;
+    }
+    &-text {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      line-height: 16px; /* fallback */
+      max-height: 64px; /* fallback */
+      -webkit-line-clamp: 4; /* number of lines to show */
+      -webkit-box-orient: vertical;
+    }
+    .card-img-top {
+      width: 100%;
+      & img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+/*True for all from tablets  --> */
 
 @media (min-width: 768px) {
   .carousel-caption p {
@@ -149,5 +195,36 @@ footer {
     position: relative;
     top: 33%;
     color: $primary;
+  }
+
+  .events {
+    &-filter{
+      width: 30%;
+      margin-right: 0px;
+    }
+    .card {
+      width: 100%;
+      flex-direction: row;
+      align-items: center;
+      .card-img-top {
+        width: 30%;
+        & img {
+          width: 30%;
+        }
+      }
+    }
+  }
+}
+
+/*True for large srcreen*/
+
+.events {
+  @media only screen and (max-width: 1200px) {
+    .card-img-top {
+      width: 30%;
+      & img {
+        width: 30%;
+      }
+    }
   }
 }

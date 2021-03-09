@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
 main {
-  min-height: calc(100vh - 40rem);
+  min-height: calc(100vh - 27rem);
 }
 
 body h1 {
@@ -48,11 +48,13 @@ body .btn-secondary:hover {
 .navbar-brand {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
+  font-size: 1.5rem;
 }
 .navbar-brand span {
   color: #335358;
   background-color: #e9ecef;
-  padding: 20px;
+  padding: 17px;
+  font-weight: 800;
 }
 
 footer {
@@ -109,7 +111,49 @@ footer a {
   background-attachment: cover;
 }
 
-/*True from tablets  --> */
+/*Events page*/
+.hero__self .carousel-item {
+  height: 20rem;
+  background-position: center center;
+}
+.hero__self .carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 20rem;
+}
+
+.events-filter {
+  width: 60%;
+}
+.events .card {
+  width: 70%;
+  margin: auto;
+}
+.events .card-title {
+  font-weight: 400;
+}
+.events .card-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 16px;
+  /* fallback */
+  max-height: 64px;
+  /* fallback */
+  -webkit-line-clamp: 4;
+  /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+.events .card .card-img-top {
+  width: 100%;
+}
+.events .card .card-img-top img {
+  width: 100%;
+}
+
+/*True for all from tablets  --> */
 @media (min-width: 768px) {
   .carousel-caption p {
     margin-bottom: 1.25rem;
@@ -139,6 +183,31 @@ footer a {
     position: relative;
     top: 33%;
     color: #335358;
+  }
+
+  .events-filter {
+    width: 30%;
+    margin-right: 0px;
+  }
+  .events .card {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+  }
+  .events .card .card-img-top {
+    width: 30%;
+  }
+  .events .card .card-img-top img {
+    width: 30%;
+  }
+}
+/*True for large srcreen*/
+@media only screen and (max-width: 1200px) {
+  .events .card-img-top {
+    width: 30%;
+  }
+  .events .card-img-top img {
+    width: 30%;
   }
 }
 
