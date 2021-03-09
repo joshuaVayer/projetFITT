@@ -1,0 +1,127 @@
+main {
+  min-height: calc(100vh - 40rem);
+}
+
+body h1 {
+  color: #e9ecef;
+}
+body h2,
+body h3,
+body h4,
+body h5,
+body h6,
+body p,
+body a {
+  color: #335358;
+}
+body .container {
+  margin-top: 2rem;
+}
+body .bg-primary {
+  background-color: #335358 !important;
+  color: #e9ecef;
+}
+body .bg-secondary {
+  background-color: #e9ecef !important;
+  color: #335358;
+}
+
+.btn-primary {
+  background-color: #335358;
+  border: #335358;
+}
+.btn-primary:hover {
+  background-color: #243b3e;
+}
+.btn-secondary {
+  background-color: #e9ecef;
+  border: #e9ecef;
+  color: #335358 !important;
+}
+.btn-secondary:hover {
+  background-color: #d1d8de;
+}
+
+.carousel-item {
+  height: 32rem;
+  background-position: center center;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 400px;
+  perspective: 1000px;
+  /*DELETE*/
+  margin-top: 3rem;
+}
+.flip-card h3,
+.flip-card p {
+  width: 80%;
+  margin: auto;
+  color: #e9ecef;
+}
+.flip-card h3 {
+  padding-top: 33%;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-position: center center;
+  background-attachment: cover;
+}
+
+@media (min-width: 768px) {
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+
+  .flip-card-back {
+    background-color: #e9ecef;
+    transform: rotateY(180deg);
+    z-index: 1;
+  }
+
+  .flip-card p {
+    position: relative;
+    top: 33%;
+    color: #335358;
+  }
+}
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  min-height: 55px;
+}
+footer a {
+  color: #e9ecef;
+}
+
+/*# sourceMappingURL=style.css.map */
