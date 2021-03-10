@@ -2,32 +2,26 @@
 <html lang="fr">
 
 <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../public/img/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <!-- Personal CSS -->
+    <link rel="stylesheet" href="../public/css/style.css">
 
-        <!-- Favicon -->
-        <link rel="icon" type="image/png" href="../public/img/favicon.png">
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-        <!-- Bootstrap Icons -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
-        <!-- Personal CSS -->
-        <link rel="stylesheet" href="../public/css/style.css">
-
-        <title>Projet FITT - Accueil</title>
-    </head>
-
+    <title>Projet FITT - Evénements</title>
 </head>
-
-
 
 <body>
     <header>
-        <!-- Navigation bar -->
+        <!-- Navigation bar (Start) -->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">Projet <span>FITT</span></a>
@@ -53,9 +47,9 @@
                 </div>
             </div>
         </nav>
-        <!--END - Navigation bar -->
+        <!-- Navigation bar (End) -->
     </header>
-    <!-- Hero section -->
+    <!-- Hero section (Start) -->
     <div class="hero__self">
         <div class="carousel-inner">
             <div class="carousel-item active" style="background-image: url(../public/img/carousel1.jpg);">
@@ -67,12 +61,12 @@
             </div>
         </div>
     </div>
-    <!-- END - Hero section -->
+    <!-- Hero section (End) -->
 
     <main>
-
-        <div class="events">
+        <section class="events">
             <div class="container w-70">
+                <!-- Filter (Start) -->
                 <div class="events-filter mb-5 float-md-end">
                     <label for="filter" class="form-label">Filtrer par thématique</label>
                     <select class="form-select" aria-label="Filter">
@@ -82,77 +76,96 @@
                         <option value="3">Soutien aux victimes</option>
                     </select>
                 </div>
+                <!-- Filter (End) -->
                 <h3 class="mb-3">Résultat(s):</h3>
-                <div class="card mb-4">
-                    <img src="../public/img/event1.jpg" class="card-img-top" />
-                    <div class="card-body">
-                        <h5 class="card-title">Vos enfants et les réseaux sociaux…comment les accompagner ?</h5>
-                        <span class="badge bg-primary mb-3">Les réseaux sociaux</span>
-                        <span class="badge bg-primary mb-3"><i class="bi bi-calendar-event"></i> 30/04/2021</span>
-                        <span class="badge bg-primary mb-3"><i class="bi bi-geo-alt"></i> Bordeaux - Nouvelle Aquitaine
-                            (33)</span>
-                        <p class="card-text">
-                            Le principal danger pour les parents est de se couper de leur enfant, en étant sans cesse
-                            dans la critique. « Il est plus utile de pratiquer soi-même les réseaux sociaux pour être en
-                            mesure d’accompagner son enfant : l’aider à développer son sens critique et à prendre du
-                            recul par rapport aux informations trouvées sur Internet. Ou encore être à l’écoute s’il se
-                            trouve face à une situation inhabituelle ». Car les réseaux sociaux peuvent aussi être à
-                            l’origine d’événements difficiles : agressions collectives, échanges avec des adultes
-                            malveillants, contenus inappropriés… Pour le psychologue, « l’enfant doit sentir que ses
-                            parents sont prêts à l’aider s’il se trouve confronté à des propos agressifs ou des images
-                            ou paroles sexuellement inappropriées. Et dans certains cas, il ne faut pas hésiter à porter
-                            plainte si l’enfant est choqué. Cela l’aidera à se reconstruire. »
-                        </p>
-                        <div class="card-buttons mt-4 float-end">
-                            <a href="event.html" class="btn btn-secondary rounded-pill stretched-link">Détails...</a>
+                <div class="events-list">
+                    <!-- Events list (Start) -->
+                    <div class="card mb-4">
+                        <img src="../public/img/event1.jpg" class="card-img-top" />
+                        <div class="card-body">
+                            <h5 class="card-title">Vos enfants et les réseaux sociaux…comment les accompagner ?</h5>
+                            <span class="badge bg-primary mb-3">Les réseaux sociaux</span>
+                            <span class="badge bg-primary mb-3"><i class="bi bi-calendar-event"></i> 30/04/2021</span>
+                            <span class="badge bg-primary mb-3"><i class="bi bi-geo-alt"></i> Bordeaux - Nouvelle
+                                Aquitaine
+                                (33)</span>
+                            <p class="card-text">
+                                Le principal danger pour les parents est de se couper de leur enfant, en étant sans
+                                cesse
+                                dans la critique. « Il est plus utile de pratiquer soi-même les réseaux sociaux pour
+                                être en
+                                mesure d’accompagner son enfant : l’aider à développer son sens critique et à prendre du
+                                recul par rapport aux informations trouvées sur Internet. Ou encore être à l’écoute s’il
+                                se
+                                trouve face à une situation inhabituelle ». Car les réseaux sociaux peuvent aussi être à
+                                l’origine d’événements difficiles : agressions collectives, échanges avec des adultes
+                                malveillants, contenus inappropriés… Pour le psychologue, « l’enfant doit sentir que ses
+                                parents sont prêts à l’aider s’il se trouve confronté à des propos agressifs ou des
+                                images
+                                ou paroles sexuellement inappropriées. Et dans certains cas, il ne faut pas hésiter à
+                                porter
+                                plainte si l’enfant est choqué. Cela l’aidera à se reconstruire. »
+                            </p>
+                            <div class="card-buttons mt-4 float-end">
+                                <a href="event.html"
+                                    class="btn btn-secondary rounded-pill stretched-link">Détails...</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="card mb-4">
-                    <img src="../public/img/event2.jpg" class="card-img-top" />
-                    <div class="card-body">
-                        <h5 class="card-title">Savoir reconnaitre les fake news</h5>
-                        <span class="badge bg-primary mb-3">Fake news</span>
-                        <span class="badge bg-primary mb-3"><i class="bi bi-calendar-event"></i> 05/05/2021</span>
-                        <span class="badge bg-primary mb-3"><i class="bi bi-geo-alt"></i> Paris - Île de France
-                            (75)</span>
-                        <p class="card-text">
+                    <div class="card mb-4">
+                        <img src="../public/img/event2.jpg" class="card-img-top" />
+                        <div class="card-body">
+                            <h5 class="card-title">Savoir reconnaitre les fake news</h5>
+                            <span class="badge bg-primary mb-3">Fake news</span>
+                            <span class="badge bg-primary mb-3"><i class="bi bi-calendar-event"></i> 05/05/2021</span>
+                            <span class="badge bg-primary mb-3"><i class="bi bi-geo-alt"></i> Paris - Île de France
+                                (75)</span>
+                            <p class="card-text">
 
-                            Les fake news, fausses informations en français, sont présentes partout sur le web. Vous
-                            avez forcément entendu ce mot, il est présent dans les médias depuis quelques années.
-                            Alors comment démêler le vrai du faux ?
-                        </p>
-                        <div class="card-buttons mt-4 float-end">
-                            <a href="event.html" class="btn btn-secondary rounded-pill stretched-link">Détails...</a>
+                                Les fake news, fausses informations en français, sont présentes partout sur le web. Vous
+                                avez forcément entendu ce mot, il est présent dans les médias depuis quelques années.
+                                Alors comment démêler le vrai du faux ?
+                            </p>
+                            <div class="card-buttons mt-4 float-end">
+                                <a href="event.html"
+                                    class="btn btn-secondary rounded-pill stretched-link">Détails...</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <img src="../public/img/event3.jpg" class="card-img-top" />
+                        <div class="card-body">
+                            <h5 class="card-title">Intervention au collége Marguerite de chavanne</h5>
+                            <span class="badge bg-primary mb-3">Lutte contre de harcélement</span>
+                            <span class="badge bg-primary mb-3"><i class="bi bi-calendar-event"></i> 25/03/2021</span>
+                            <span class="badge bg-primary mb-3"><i class="bi bi-geo-alt"></i> Angoulême - Nouvelle
+                                Aquitaine
+                                (16)</span>
+                            <p class="card-text">
+                                L’utilisation d’internet et des outils numériques par les collégiens (6ème, 5ème, 4ème,
+                                3ème) s’est généralisé. Ils s’inscrivent de plus en plus jeunes sur les réseaux sociaux
+                                et
+                                ont besoin d’apprendre les règles et les bonnes pratiques. Le cyberharcèlement a souvent
+                                le
+                                cadre scolaire comme origine, des messages de prévention et de réaction en direction des
+                                collégiens doivent leur être transmis. Sous couvert d’un droit d’expression et d’un
+                                souhait
+                                de liberté, les adolescents sont parfois livrés à eux-mêmes dans leur utilisation des
+                                outils
+                                numériques et ne s’orientent pas toujours vers leurs parents en cas de problème. La
+                                sensibilisation à une utilisation responsable des outils modernes de communication est
+                                aujourd’hui indispensable pour les aider à se comporter de manière citoyenne.
+                            </p>
+                            <div class="card-buttons mt-4 float-end">
+                                <a href="event.html"
+                                    class="btn btn-secondary rounded-pill stretched-link">Détails...</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="card mb-4">
-                    <img src="../public/img/event3.jpg" class="card-img-top" />
-                    <div class="card-body">
-                        <h5 class="card-title">Intervention au collége Marguerite de chavanne</h5>
-                        <span class="badge bg-primary mb-3">Lutte contre de harcélement</span>
-                        <span class="badge bg-primary mb-3"><i class="bi bi-calendar-event"></i> 25/03/2021</span>
-                        <span class="badge bg-primary mb-3"><i class="bi bi-geo-alt"></i> Angoulême - Nouvelle Aquitaine
-                            (16)</span>
-                        <p class="card-text">
-                            L’utilisation d’internet et des outils numériques par les collégiens (6ème, 5ème, 4ème,
-                            3ème) s’est généralisé. Ils s’inscrivent de plus en plus jeunes sur les réseaux sociaux et
-                            ont besoin d’apprendre les règles et les bonnes pratiques. Le cyberharcèlement a souvent le
-                            cadre scolaire comme origine, des messages de prévention et de réaction en direction des
-                            collégiens doivent leur être transmis. Sous couvert d’un droit d’expression et d’un souhait
-                            de liberté, les adolescents sont parfois livrés à eux-mêmes dans leur utilisation des outils
-                            numériques et ne s’orientent pas toujours vers leurs parents en cas de problème. La
-                            sensibilisation à une utilisation responsable des outils modernes de communication est
-                            aujourd’hui indispensable pour les aider à se comporter de manière citoyenne.
-                        </p>
-                        <div class="card-buttons mt-4 float-end">
-                            <a href="event.html" class="btn btn-secondary rounded-pill stretched-link">Détails...</a>
-                        </div>
-                    </div>
-                </div>
+                <!-- Events list (End) -->
             </div>
-        </div>
+        </section>
     </main>
 
     <!-- Footer -->
@@ -169,7 +182,7 @@
             </div>
         </div>
     </footer>
-
+    <!--Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
