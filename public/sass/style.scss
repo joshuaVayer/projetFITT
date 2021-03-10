@@ -172,6 +172,17 @@ footer {
   }
 }
 
+.event{
+  .social-media{
+    font-size: 3rem;
+  }
+  .list-group-item{
+    p{
+      margin-bottom: 0px;
+    }
+  }
+}
+
 /*True for all from tablets  --> */
 
 @media (min-width: 768px) {

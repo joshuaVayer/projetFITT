@@ -159,6 +159,13 @@ footer a {
   width: 100%;
 }
 
+.event .social-media {
+  font-size: 3rem;
+}
+.event .list-group-item p {
+  margin-bottom: 0px;
+}
+
 /*True for all from tablets  --> */
 @media (min-width: 768px) {
   .carousel-caption p {
