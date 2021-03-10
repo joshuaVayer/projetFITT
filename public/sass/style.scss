@@ -1,29 +1,54 @@
+/*
+1 - Fonts
+2- Colors 
+3 - Animation
+4 - General 
+5 - Navigation bar and Footer 
+6 - Hero section
+8 - Page by page 
+  8.1 - Home 
+  8.2 - Events page
+  8.3 - Event page
+9 - Responsive 
+  9.1 - True for all from tablets
+  9.3 - True for large srcreen
+*/
+
+
+
+/*1 - Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+
+/* 2- Colors */
 $primary: #335358;
 $secondary: #e9ecef;
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+/* 3 - Animation*/
+@keyframes changeColorOne {
+  0% { 
+    padding: 0;
+    background-color: $primary;
+    
+  }
+  100%   {
+    padding: 17px;
+    color: $primary;
+    background-color: $secondary;
+  }
+}
 
+/* 4 - General */
 main {
   min-height: calc(100vh - 27rem);
 }
 body {
-  h1 {
+  font-family: "Montserrat", sans-serif !important;
+h1 {
     color: $secondary;
-    font-family: "Montserrat", sans-serif;
     font-weight: 400;
   }
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  a {
+  h2,h3,h4,h5,h6,p,a {
     color: $primary;
-    font-family: "Montserrat", sans-serif !important;
-  }
-  .container {
-    margin-top: 2rem;
   }
   .bg {
     &-primary {
@@ -58,8 +83,12 @@ body {
       }
     }
   }
+  .container {
+    margin-top: 2rem;
+  }
 }
 
+/* 5 - Navigation bar and Footer */
 .navbar-brand {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
@@ -69,9 +98,9 @@ body {
     background-color: $secondary;
     padding: 17px;
     font-weight: 800;
+    animation: 1s ease changeColorOne;
   }
 }
-
 footer {
   position: relative;
   bottom: 0;
@@ -82,6 +111,7 @@ footer {
   }
 }
 
+/* 6 - Hero section*/
 .carousel {
   &-item {
     height: 32rem;
@@ -99,6 +129,8 @@ footer {
   }
 }
 
+/* 8 - Page by page */
+/* 8.1 - Home */
 .flip-card {
   background-color: transparent;
   width: 400px;
@@ -128,7 +160,7 @@ footer {
   }
 }
 
-/*Events page*/
+/* 8.2 - Events page*/
 
 .hero__self .carousel {
   &-item {
@@ -172,6 +204,7 @@ footer {
   }
 }
 
+/* 8.3 - Event page*/
 .event{
   .social-media{
     font-size: 3rem;
@@ -183,37 +216,37 @@ footer {
   }
 }
 
-/*True for all from tablets  --> */
-
+/* 9 - Responsive */
+/* 9.1 - True for all from tablets  --> */
 @media (min-width: 768px) {
   .carousel-caption p {
     margin-bottom: 1.25rem;
     font-size: 1.25rem;
     line-height: 1.4;
   }
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
+  .flip-card{
+  &:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
 
-  .flip-card-front,
-  .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-  }
+    &-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+    }
 
-  .flip-card-back {
-    background-color: $secondary;
-    transform: rotateY(180deg);
-    z-index: 1;
+    &-back {
+      background-color: $secondary;
+      transform: rotateY(180deg);
+      z-index: 1;
+    }
+    & p {
+      position: relative;
+      top: 33%;
+      color: $primary;
+    }
   }
-  .flip-card p {
-    position: relative;
-    top: 33%;
-    color: $primary;
-  }
-
   .events {
     &-filter{
       width: 30%;
@@ -233,8 +266,7 @@ footer {
   }
 }
 
-/*True for large srcreen*/
-
+/* 9.3 - True for large srcreen*/
 .events {
   @media only screen and (max-width: 1200px) {
     .card-img-top {
