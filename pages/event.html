@@ -72,52 +72,62 @@
             <!-- Left block (Start) -->
             <aside class="col-md-3">
                 <!-- Event Details (Start) -->
-                <ul class="list-group mb-3">
-                    <li class="list-group-item d-flex">
-                        <div class="col-2 list-group-icon">
-                            <h4><i class="bi bi-calendar3"></i></h4>
-                        </div>
-                        <div class="col list-group-text">
-                            <h5>Date</h5>
-                            <p>30/04/2021</p>
-                        </div>
-                    </li>
-                </ul>
-                <ul class="list-group mb-3">
-                    <li class="list-group-item d-flex">
-                        <div class="col-2 list-group-icon">
-                            <h4><i class="bi bi-clock"></i></h4>
-                        </div>
-                        <div class="col list-group-text">
-                            <h5>Heure</h5>
-                            <p>19h00</p>
-                        </div>
-                    </li>
-                </ul>
-                <ul class="list-group mb-3">
-                    <li class="list-group-item d-flex">
-                        <div class="col-2 list-group-icon">
-                            <h4><i class="bi bi-geo-alt"></i></h4>
-                        </div>
-                        <div class="col list-group-text">
-                            <h5>Lieu</h5>
-                            <p>ANGOULÊME (16)</p>
-                            <small>51 Rue du Minage, 16022 Angoulême, France</small>
-                        </div>
-                    </li>
-                </ul>
-                <ul class="list-group mb-3">
-                    <li class="list-group-item d-flex">
-                        <div class="col-2 list-group-icon">
-                            <h4><i class="bi bi-tags"></i></h4>
-                        </div>
-                        <div class="col list-group-text">
-                            <span class="badge bg-primary mb-3">Les réseaux sociaux</span>
-                            <span class="badge bg-primary mb-3">Classes de collége</span>
-                            <span class="badge bg-primary mb-3">Nouvelle-Aquitaine</span>
-                            <span class="badge bg-primary mb-3">Prévention</span>
-                        </div>
-                    </li>
+                <!-- Balisage des microdonnées ajouté par l'outil d'aide au balisage de données structurées de Google -->
+                <span itemscope itemtype="http://schema.org/Event">
+                    <ul class="list-group mb-3">
+                        <li class="list-group-item d-flex">
+                            <div class="col-2 list-group-icon">
+                                <h4><i class="bi bi-calendar3"></i></h4>
+                            </div>
+                            <div class="col list-group-text">
+                                <h5>Date</h5>
+                                <p itemprop="startDate" content="2021-04-30">30/04/2021</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="list-group mb-3">
+                        <li class="list-group-item d-flex">
+                            <div class="col-2 list-group-icon">
+                                <h4><i class="bi bi-clock"></i></h4>
+                            </div>
+                            <div class="col list-group-text">
+                                <h5>Heure</h5>
+                                <p itemprop="startDate"
+                                    content="Veuillez insérer ici une date/heure valide au format ISO 8601. Exemples : 2015-07-27 ou 2015-07-27T15:30">
+                                    19h00</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="list-group mb-3">
+                        <li class="list-group-item d-flex">
+                            <div class="col-2 list-group-icon">
+                                <h4><i class="bi bi-geo-alt"></i></h4>
+                            </div>
+                            <div itemprop="location" itemscope itemtype="http://schema.org/Place"
+                                class="col list-group-text">
+                                <h5>Lieu</h5>
+                                <p itemprop="name">ANGOULÊME (16)</p>
+                                <small itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                    <span itemprop="streetAddress">51 Rue du Minage,</span>
+                                    <span itemprop="postalCode">16022</span>
+                                    <span itemprop="addressLocality">Angoulême</span>,
+                                    <span itemprop="addressCountry">France</span></small>
+                            </div>
+                        </li>
+                    </ul>
+                </span>
+                <ul class="list-group mb-3"></ul>
+                <li class="list-group-item d-flex">
+                    <div class="col-2 list-group-icon">
+                        <h4><i class="bi bi-tags"></i></h4>
+                    </div>
+                    <div class="col list-group-text">
+                        <span class="badge bg-primary mb-3">Les réseaux sociaux</span>
+                        <span class="badge bg-primary mb-3">Classes de collége</span>
+                        <span class="badge bg-primary mb-3">Nouvelle-Aquitaine</span>
+                        <span class="badge bg-primary mb-3">Prévention</span>
+                    </div>
+                </li>
                 </ul>
                 <!-- Event Details (End) -->
                 <!-- Social media badge (Start) -->

@@ -80,16 +80,21 @@
                 <h3 class="mb-3">Résultat(s):</h3>
                 <div class="events-list">
                     <!-- Events list (Start) -->
+                    <!-- Balisage des microdonnées ajouté par l'outil d'aide au balisage de données structurées de Google -->
                     <div class="card mb-4">
                         <img src="../public/img/event1.jpg" class="card-img-top" />
-                        <div class="card-body">
-                            <h5 class="card-title">Vos enfants et les réseaux sociaux…comment les accompagner ?</h5>
+                        <div itemscope itemtype="http://schema.org/Event" class="card-body">
+                            <h5 itemprop="name" class="card-title">Vos enfants et les réseaux sociaux…comment les
+                                accompagner ?</h5>
                             <span class="badge bg-primary mb-3">Les réseaux sociaux</span>
-                            <span class="badge bg-primary mb-3"><i class="bi bi-calendar-event"></i> 30/04/2021</span>
-                            <span class="badge bg-primary mb-3"><i class="bi bi-geo-alt"></i> Bordeaux - Nouvelle
-                                Aquitaine
-                                (33)</span>
-                            <p class="card-text">
+                            <span itemprop="startDate" content="2021-04-30" class="badge bg-primary mb-3"><i
+                                    class="bi bi-calendar-event"></i> 30/04/2021</span>
+
+                            <span itemprop="location" itemscope itemtype="http://schema.org/Place"><span itemprop="name"
+                                    class="badge bg-primary mb-3"><i class="bi bi-geo-alt"></i> Bordeaux - Nouvelle
+                                    Aquitaine
+                                    (33)</span></span>
+                            <p itemprop="description" class="card-text">
                                 Le principal danger pour les parents est de se couper de leur enfant, en étant sans
                                 cesse
                                 dans la critique. « Il est plus utile de pratiquer soi-même les réseaux sociaux pour
@@ -114,13 +119,16 @@
                     </div>
                     <div class="card mb-4">
                         <img src="../public/img/event2.jpg" class="card-img-top" />
-                        <div class="card-body">
-                            <h5 class="card-title">Savoir reconnaitre les fake news</h5>
+                        <div itemscope itemtype="http://schema.org/Event" class="card-body">
+                            <h5 itemprop="name" class="card-title">Savoir reconnaitre les fake news</h5>
                             <span class="badge bg-primary mb-3">Fake news</span>
-                            <span class="badge bg-primary mb-3"><i class="bi bi-calendar-event"></i> 05/05/2021</span>
-                            <span class="badge bg-primary mb-3"><i class="bi bi-geo-alt"></i> Paris - Île de France
-                                (75)</span>
-                            <p class="card-text">
+                            <span itemprop="startDate" content="2021-05-05" class="badge bg-primary mb-3"><i
+                                    class="bi bi-calendar-event"></i> 05/05/2021</span>
+
+                            <span itemprop="location" itemscope itemtype="http://schema.org/Place"><span itemprop="name"
+                                    class="badge bg-primary mb-3"><i class="bi bi-geo-alt"></i> Paris - Île de France
+                                    (75)</span></span>
+                            <p itemprop="description" class="card-text">
 
                                 Les fake news, fausses informations en français, sont présentes partout sur le web. Vous
                                 avez forcément entendu ce mot, il est présent dans les médias depuis quelques années.
@@ -134,14 +142,17 @@
                     </div>
                     <div class="card mb-4">
                         <img src="../public/img/event3.jpg" class="card-img-top" />
-                        <div class="card-body">
-                            <h5 class="card-title">Intervention au collége Marguerite de chavanne</h5>
+                        <div itemscope itemtype="http://schema.org/Event" class="card-body">
+                            <h5 itemprop="name" class="card-title">Intervention au collége Marguerite de chavanne</h5>
                             <span class="badge bg-primary mb-3">Lutte contre de harcélement</span>
-                            <span class="badge bg-primary mb-3"><i class="bi bi-calendar-event"></i> 25/03/2021</span>
-                            <span class="badge bg-primary mb-3"><i class="bi bi-geo-alt"></i> Angoulême - Nouvelle
-                                Aquitaine
-                                (16)</span>
-                            <p class="card-text">
+                            <span itemprop="startDate" content="2021-03-25" class="badge bg-primary mb-3"><i
+                                    class="bi bi-calendar-event"></i> 25/03/2021</span>
+
+                            <span itemprop="location" itemscope itemtype="http://schema.org/Place"><span itemprop="name"
+                                    class="badge bg-primary mb-3"><i class="bi bi-geo-alt"></i> Angoulême - Nouvelle
+                                    Aquitaine
+                                    (16)</span></span>
+                            <p itemprop="description" class="card-text">
                                 L’utilisation d’internet et des outils numériques par les collégiens (6ème, 5ème, 4ème,
                                 3ème) s’est généralisé. Ils s’inscrivent de plus en plus jeunes sur les réseaux sociaux
                                 et
